@@ -24,11 +24,19 @@ for (let x = 0; x < columns; x++) {
   rainDrops[x] = 1;
 }
 
+const colors = ["#ffe200", "#d40028", "#03fc33", "#0F0", "#b10af5"];
+let Ccolor = colors[Math.floor(Math.random() * colors.length)];
+
+const changeColor = () => {
+  let idx = Math.floor(Math.random() * colors.length);
+  Ccolor = colors[idx];
+};
+
 const draw = () => {
   context.fillStyle = "rgba(0, 0, 0, 0.05)";
   context.fillRect(0, 0, canvas.width, canvas.height);
 
-  context.fillStyle = "#0F0";
+  context.fillStyle = Ccolor;
   context.font = fontSize + "px monospace";
 
   for (let i = 0; i < rainDrops.length; i++) {
@@ -55,4 +63,7 @@ const activate = () => {
   // Matrix activate
   canvas.style.display = "inline";
   setInterval(draw, 30);
+
+  // change color
+  setInterval(changeColor, 2000);
 };

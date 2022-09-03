@@ -1,0 +1,95 @@
+.navbar {
+  margin-top: 30px;
+  left: 35%;
+  text-align: center;
+  z-index: 99;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  opacity: 0.85;
+  background-color: black;
+}
+
+.navbar a {
+  opacity: 1;
+  transition: 0.2s ease-in;
+  color: white;
+  font-size: 18px;
+  font-weight: bolder;
+  margin-left: 50px;
+  padding: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+}
+
+#home {
+}
+
+#home:hover {
+  border-bottom: 2px solid rgb(223, 25, 121);
+  color: rgb(223, 25, 121);
+}
+
+#left {
+}
+
+#left:hover {
+  transition: 0.2s ease-in;
+  border-bottom: 2px solid rgb(223, 25, 121);
+  color: rgb(223, 25, 121);
+}
+
+#right {
+  margin-right: 25px;
+}
+
+#right:hover {
+  transition: 0.2s ease-in;
+  border-bottom: 2px solid rgb(223, 25, 121);
+  color: rgb(223, 25, 121);
+}
+
+.imgDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+
+  height: 35rem;
+  width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imgDiv img {
+  margin: 0;
+  border-radius: 5px;
+  border: 1px solid rgb(205, 202, 202);
+  object-fit: contain;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons button {
+  background-color: white;
+  margin: 30px;
+  text-align: center;
+  padding: 10px;
+  width: 90px;
+  font-weight: bold;
+  font-size: 18px;
+
+  transition: 0.2s ease;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.buttons button:hover {
+  border: 1px solid red;
+  color: red;
+}

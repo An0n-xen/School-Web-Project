@@ -1,0 +1,394 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: HomeP;
+  src: url("/fonts/open-sans/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: Unvail;
+  src: url("/fonts/the-godfather/TheGodfather-v2.ttf");
+}
+
+@font-face {
+  font-family: Tenada;
+  src: url("/fonts/tenada/Tenada.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.main {
+  display: flex;
+  position: relative;
+  z-index: -1;
+
+  border-radius: 30px;
+}
+
+.navbar {
+  margin-top: 30px;
+  left: 35%;
+  position: fixed;
+  z-index: 99;
+
+  border-radius: 5px;
+  opacity: 0.85;
+  background-color: black;
+}
+
+.navbar a {
+  opacity: 1;
+  transition: 0.2s ease-in;
+  color: white;
+  font-size: 18px;
+  font-weight: bolder;
+  margin-left: 50px;
+  padding: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+}
+
+#home {
+}
+
+#home:hover {
+  border-bottom: 2px solid rgb(223, 25, 121);
+  color: rgb(223, 25, 121);
+}
+
+#left {
+}
+
+#left:hover {
+  transition: 0.2s ease-in;
+  border-bottom: 2px solid rgb(223, 25, 121);
+  color: rgb(223, 25, 121);
+}
+
+#right {
+  margin-right: 25px;
+}
+
+#right:hover {
+  transition: 0.2s ease-in;
+  border-bottom: 2px solid rgb(223, 25, 121);
+  color: rgb(223, 25, 121);
+}
+
+.pic {
+  position: relative;
+  margin-top: 230px;
+  width: 90vw;
+  height: 250px;
+}
+
+.pic h1 {
+  position: absolute;
+  font-family: "HomeP";
+  font-size: 54px;
+  font-weight: bold;
+  word-spacing: 30px;
+
+  text-shadow: px 5px 5px #ccc;
+
+  right: 40px;
+  bottom: 10px;
+}
+
+.imgright {
+  width: 70%;
+  padding-right: 0px;
+}
+
+.mainImg {
+  height: 100vh;
+  width: 60rem;
+}
+
+.imgleft #img1 {
+  position: absolute;
+  transform: rotate(-20deg);
+  left: 10px;
+  height: 52%;
+  top: -10px;
+  border-radius: 50px;
+  box-shadow: 10px 10px 5px #ccc;
+}
+
+.imgleft #img2 {
+  position: absolute;
+  bottom: 10px;
+  left: 70px;
+  transform: rotate(0deg);
+  height: 52%;
+  width: 20%;
+  border-radius: 50px;
+  box-shadow: 10px 10px 5px #ccc;
+}
+
+.imgleft #img3 {
+  position: absolute;
+  bottom: 10px;
+  left: 350px;
+  transform: rotate(0deg);
+  height: 40%;
+  border-radius: 50px;
+  box-shadow: 10px 10px 5px #ccc;
+}
+
+/* Lastest section */
+.text {
+  text-align: center;
+  border-radius: 30px;
+  margin-top: 30px;
+}
+
+.text h1 {
+  padding-top: 50px;
+  margin-bottom: 0px;
+  font-family: "Tenada";
+  font-size: 50px;
+}
+
+.text p {
+  font-family: "Tenada";
+  display: none;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+/* Line separator */
+
+.line {
+  transition: 400ms;
+  margin-top: 0px;
+  height: 0.5rem;
+  width: 0rem;
+  border-radius: 15px;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.line.show {
+  width: 40rem;
+}
+
+.cardr {
+  opacity: 0;
+  transition: 200ms;
+  transform: translateX(100px);
+}
+
+.cardr.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.cardl {
+  opacity: 0;
+  transition: 200ms;
+  transform: translateX(-100px);
+}
+
+.cardl.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.gallery {
+  margin-top: 110px;
+}
+
+.gallery div {
+  display: flex;
+  justify-content: center;
+}
+
+#b1 {
+  z-index: 99;
+  font-family: "Tenada";
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.row1 {
+  margin: 15px;
+  overflow: hidden;
+}
+
+.row1 div {
+  position: relative;
+  margin: 15px;
+  height: 27rem;
+  width: 23rem;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+
+  border-radius: 50px;
+  box-shadow: 10px 10px 5px #ccc;
+}
+
+.row1 div img {
+  object-fit: cover;
+
+  transition-delay: 0.1s;
+  transition-duration: 0.36s;
+  transition-property: all ease-in;
+
+  border-radius: 50px;
+}
+
+.row1 div img:hover {
+  transform: scale(1.2);
+  opacity: 0.6;
+}
+
+.row2 {
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.row2 div {
+  position: relative;
+  margin: 15px;
+  height: 27rem;
+  width: 23rem;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+
+  border-radius: 50px;
+  box-shadow: 10px 10px 5px #ccc;
+}
+
+.row2 div img {
+  object-fit: cover;
+
+  transition-delay: 0.1s;
+  transition-duration: 0.36s;
+  transition-property: all ease-in;
+
+  border-radius: 50px;
+}
+
+.row2 div img:hover {
+  transform: scale(1.2);
+  opacity: 0.6;
+}
+
+.row3 {
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.row3 div {
+  position: relative;
+  margin: 15px;
+  height: 27rem;
+  width: 23rem;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+
+  border-radius: 50px;
+  box-shadow: 10px 10px 5px #ccc;
+}
+
+.row3 div img {
+  object-fit: cover;
+
+  transition-delay: 0.1s;
+  transition-duration: 0.36s;
+  transition-property: all ease-in;
+
+  border-radius: 50px;
+}
+
+.row3 div img:hover {
+  transform: scale(1.2);
+  opacity: 0.6;
+}
+
+.row4 {
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.row4 div {
+  position: relative;
+  margin: 15px;
+  height: 27rem;
+  width: 23rem;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+
+  border-radius: 50px;
+  box-shadow: 10px 10px 5px #ccc;
+}
+
+.row4 div img {
+  object-fit: cover;
+
+  transition-delay: 0.1s;
+  transition-duration: 0.36s;
+  transition-property: all ease-in;
+
+  border-radius: 50px;
+}
+
+.row4 div img:hover {
+  transform: scale(1.2);
+  opacity: 0.6;
+}
+
+.row5 {
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.row5 div {
+  position: relative;
+  margin: 15px;
+  height: 27rem;
+  width: 23rem;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+
+  border-radius: 50px;
+  box-shadow: 10px 10px 5px #ccc;
+}
+
+.row5 div img {
+  object-fit: cover;
+
+  transition-delay: 0.1s;
+  transition-duration: 0.36s;
+  transition-property: all ease-in;
+
+  border-radius: 50px;
+}
+
+.row5 div img:hover {
+  transform: scale(1.2);
+  opacity: 0.6;
+}

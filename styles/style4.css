@@ -10,7 +10,8 @@ body {
 .navbar {
   position: absolute;
   margin-top: 30px;
-  left: 35%;
+  left: auto;
+  right: auto;
   text-align: center;
   z-index: 99;
   width: fit-content;

@@ -24,7 +24,16 @@ for (let x = 0; x < columns; x++) {
   rainDrops[x] = 1;
 }
 
-const colors = ["#ffe200", "#d40028", "#03fc33", "#0F0", "#b10af5"];
+const colors = [
+  "#ffe200",
+  "#d40028",
+  "#03fc33",
+  "#0F0",
+  "#b10af5",
+  "#256eda",
+  "#ff00f3",
+  "#20df2c",
+];
 let Ccolor = colors[Math.floor(Math.random() * colors.length)];
 
 const changeColor = () => {
@@ -67,3 +76,4 @@ const activate = () => {
   // change color
   setInterval(changeColor, 2000);
 };
+console.log(window.innerWidth);

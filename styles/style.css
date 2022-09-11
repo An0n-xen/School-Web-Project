@@ -34,6 +34,7 @@ body {
 .navbar {
   margin-top: 30px;
   left: 35%;
+  right: auto;
   position: fixed;
   z-index: 99;
 
@@ -364,6 +365,10 @@ body {
   overflow: hidden;
 }
 
+#mask {
+  display: none;
+}
+
 .row5 div {
   position: relative;
   margin: 15px;
@@ -391,4 +396,41 @@ body {
 .row5 div img:hover {
   transform: scale(1.2);
   opacity: 0.6;
+}
+
+@media screen and (max-width: 1426px) {
+  .navbar {
+    left: 20%;
+  }
+
+  #mask {
+    display: inline;
+    position: absolute;
+    top: 90px;
+    height: 45rem;
+    right: 0;
+    opacity: 0.7;
+  }
+
+  .mainImg {
+    display: none;
+  }
+
+  .imgleft {
+    display: none;
+  }
+
+  .main {
+    height: 100vh;
+  }
+
+  #arrow {
+    display: none;
+  }
+
+  .pic h1 {
+    top: 50%;
+    bottom: 50%;
+    margin-left: 10px;
+  }
 }

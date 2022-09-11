@@ -14,19 +14,40 @@
       <a href="/pages/pay_out.html" id="right">PAY OUT</a>
     </div>
 
-    <div class="formdiv">
-      <form action="" class="meform">
-        <div class="upload">
-          <h1 id="meh1">Drop Image Here</h1>
-          <input type="file" name="filename" id="myfile" />
+    <div class="maindiv">
+      <div class="first">
+        
+        <img id="img2" src="/images/test3-rb.png" alt="">
+        <img id="img3" src="/images/image7.png" alt="">
+        <!-- <div id="one">
+          <img src="/images/image17.jpg" alt="" />
         </div>
 
-        <input type="submit" value="Upload" class="upload-btn" />
-      </form>
+        <div>
+          <img src="/images/image23.png" alt="" />
+        </div> -->
+      </div>
+
+      <div class="formdiv">
+        <form action="" class="meform">
+          <div class="upload">
+            <h1 id="meh1">Drop Image Here</h1>
+            <input type="file" name="filename" id="myfile" />
+          </div>
+
+          <input type="submit" value="Upload" class="upload-btn" />
+        </form>
+      </div>
+
+      <div class="last">
+        <img src="/images/test2-rb.png" alt="">
+        
     </div>
+
     <script>
       const head = document.querySelector("#meh1");
       const upload_div = document.querySelector(".upload");
+
 
       upload_div.addEventListener("mouseover", () => {
         head.style.color = "red";
@@ -35,6 +56,9 @@
       upload_div.addEventListener("mouseout", () => {
         head.style.color = "black";
       });
+
+      console.log(window.innerWidth)
+      
     </script>
   </body>
 </html>

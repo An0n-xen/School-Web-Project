@@ -166,3 +166,6 @@ for (const item in row5_img) {
     });
   }
 }
+
+console.log(window.innerWidth);
+//1426

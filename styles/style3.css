@@ -50,7 +50,99 @@
   display: flex;
 }
 
+.maindiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.first {
+  position: relative;
+
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+.first div {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 300px;
+}
+
+.last {
+  position: relative;
+
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+.last div {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 300px;
+}
+
+#one {
+  bottom: 0%;
+  right: 0;
+}
+
+#onee {
+  bottom: 0;
+  left: 0;
+}
+
+#twoo {
+  right: 0;
+}
+
+.first {
+  position: relative;
+  padding: 0px;
+}
+
+#img2 {
+  margin-bottom: 0px;
+  box-shadow: 10px 10px 5px #ccc;
+  transform: scale(0.8);
+  opacity: 1;
+  border-radius: 200px;
+}
+
+#img3 {
+  position: absolute;
+  left: 100px;
+  bottom: 0;
+  padding: 0px;
+  margin-top: 0px;
+  box-shadow: 10px 10px 5px #ccc;
+  transform: scale(0.8);
+  opacity: 1;
+  border-radius: 300px;
+}
+
+.last {
+  margin-top: -50px;
+  display: flex;
+  padding-right: 50px;
+}
+
+.last img {
+  transform: scale(1.5);
+  width: 25rem;
+  border-radius: 200px;
+  opacity: 0.9;
+}
+
 .meform {
+  color: white;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -86,9 +178,9 @@
 
 .upload-btn {
   background-color: white;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
-  padding: 20px;
+  padding: 15px;
   width: 150px;
   border-radius: 5px;
   border: 2px solid black;
@@ -98,4 +190,19 @@
 .upload-btn:hover {
   border: 2px solid red;
   color: red;
+}
+
+@media screen and (max-width: 1290px) {
+  .first {
+    display: none;
+  }
+
+  .last {
+    display: none;
+  }
+
+  .maindiv {
+    display: flex;
+    justify-content: center;
+  }
 }

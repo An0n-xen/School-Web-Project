@@ -1,6 +1,10 @@
 # School-Web-Project
 African NFT showcase site
 Shop and buy nfts here
+
+### * [For Windows]
+If you are using windows, replace file in project with its corresponding file in the Windows-Version folder
+
 ## Home Page 
 ![Screenshot (116)](https://user-images.githubusercontent.com/76828245/226811923-a02c8441-dbfa-414f-ba64-7a9ed5e57ee9.png)
 ## Gallery Page

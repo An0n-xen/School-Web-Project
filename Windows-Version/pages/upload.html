@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style3.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="upload.html" id="left">UPLOAD</a>
+      <a id="home" href="../index.html">HOME</a>
+      <a href="./pay_out.html" id="right">PAY OUT</a>
+    </div>
+
+    <div class="maindiv">
+      <div class="first">
+        
+        <img id="img2" src="../images/test3-rb.png" alt="">
+        <img id="img3" src="../images/image7.png" alt="">
+    
+      </div>
+
+      <div class="formdiv">
+        <form action="" class="meform">
+          <div class="upload">
+            <h1 id="meh1">Drop Image Here</h1>
+            <input type="file" name="filename" id="myfile" />
+          </div>
+
+          <input type="submit" value="Upload" class="upload-btn" />
+        </form>
+      </div>
+
+      <div class="last">
+        <img src="../images/test2-rb.png" alt="">
+        
+    </div>
+
+    <script>
+      const head = document.querySelector("#meh1");
+      const upload_div = document.querySelector(".upload");
+
+
+      upload_div.addEventListener("mouseover", () => {
+        head.style.color = "red";
+      });
+
+      upload_div.addEventListener("mouseout", () => {
+        head.style.color = "black";
+      });
+
+      console.log(window.innerWidth)
+      
+    </script>
+  </body>
+</html>
